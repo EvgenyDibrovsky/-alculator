@@ -2,45 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
-      rel="stylesheet"
-    />
-
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Calculator</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
+
   <body>
-    <div class="calculator">
-      <input type="text" class="screen" placeholder="0" />
-      <div class="buttons">
-        <button type="button" class="btn" data-num="7">7</button>
-        <button type="button" class="btn" data-num="8">8</button>
-        <button type="button" class="btn" data-num="9">9</button>
-        <button type="button" class="btn" data-num="+" id="funcbtn">+</button>
-        <br />
-        <button type="button" class="btn" data-num="4">4</button>
-        <button type="button" class="btn" data-num="5">5</button>
-        <button type="button" class="btn" data-num="6">6</button>
-        <button type="button" class="btn" data-num="-" id="funcbtn">-</button>
-        <br />
-        <button type="button" class="btn" data-num="1">1</button>
-        <button type="button" class="btn" data-num="2">2</button>
-        <button type="button" class="btn" data-num="3">3</button>
-        <button type="button" class="btn" data-num="*" id="funcbtn">x</button>
-        <br />
-        <button type="button" class="btn" data-num="0">0</button>
-        <button type="button" class="btn-clear" id="btnx">AC</button>
-        <button type="button" class="btn-equal" id="btnx">=</button>
-        <button type="button" class="btn" data-num="/" id="funcbtn">/</button>
-        <br />
+    <div class="calculator-grid">
+      <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
       </div>
+      <button data-all-clear class="span-two">AC</button>
+      <button data-delete>🠔</button>
+      <button data-operation>÷</button>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operation>*</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation>+</button>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operation>-</button>
+      <button data-number>.</button>
+      <button data-number>0</button>
+      <button data-equals class="span-two">=</button>
     </div>
 
-    <script src="calculator.js"></script>
+    <script src="calculator.js" defer></script>
   </body>
 </html>
