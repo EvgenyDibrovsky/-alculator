@@ -1,50 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Calculator</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="calculator.js"></script>
-    <style>
-      body {
-        background-color: #f5f0eb;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Calculator</title>
   </head>
   <body>
     <div class="calculator">
-      <div class="input" id="input"></div>
+      <input type="text" class="screen" placeholder="0" />
       <div class="buttons">
-        <div class="operators">
-          <div>+</div>
-          <div>-</div>
-          <div>&times;</div>
-          <div>&divide;</div>
-        </div>
-        <div class="leftPanel">
-          <div class="numbers">
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-          </div>
-          <div class="numbers">
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-          </div>
-          <div class="numbers">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </div>
-          <div class="numbers">
-            <div>0</div>
-            <div>.</div>
-            <div id="clear">C</div>
-          </div>
-        </div>
-        <div class="equal" id="result">=</div>
+        <button type="button" class="btn" data-num="7">7</button>
+        <button type="button" class="btn" data-num="8">8</button>
+        <button type="button" class="btn" data-num="9">9</button>
+        <button type="button" class="btn" data-num="+" id="funcbtn">+</button>
+        <br />
+        <button type="button" class="btn" data-num="4">4</button>
+        <button type="button" class="btn" data-num="5">5</button>
+        <button type="button" class="btn" data-num="6">6</button>
+        <button type="button" class="btn" data-num="-" id="funcbtn">-</button>
+        <br />
+        <button type="button" class="btn" data-num="1">1</button>
+        <button type="button" class="btn" data-num="2">2</button>
+        <button type="button" class="btn" data-num="3">3</button>
+        <button type="button" class="btn" data-num="*" id="funcbtn">x</button>
+        <br />
+        <button type="button" class="btn" data-num="0">0</button>
+        <button type="button" class="btn-clear" id="btnx">AC</button>
+        <button type="button" class="btn-equal" id="btnx">=</button>
+        <button type="button" class="btn" data-num="/" id="funcbtn">/</button>
+        <br />
       </div>
     </div>
+
+    <script src="calculator.js"></script>
   </body>
 </html>

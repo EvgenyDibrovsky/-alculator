@@ -1,118 +1,104 @@
-body {
-  width: 500px;
-  margin: 4% auto;
-  font-family: 'Source Sans Pro', sans-serif;
-  letter-spacing: 5px;
-  font-size: 1.8rem;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    background-color: #3d424d;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .calculator {
-  padding: 20px;
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 1px;
+   
+    margin-top: 20px;
+    padding: 2px;
+    max-width: 310px;
+    background-color: #22252D;
+    height: fit-content;
+    border-radius: 9px;
+    transition: height 0.2s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.input {
-  border: 1px solid #ddd;
-  border-radius: 1px;
-  height: 60px;
-  padding-right: 15px;
-  padding-top: 10px;
-  text-align: right;
-  margin-right: 6px;
-  font-size: 2.5rem;
-  overflow-x: auto;
-  transition: all .2s ease-in-out;
+.buttons {
+    background-color: #171717;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+
 }
 
-.input:hover {
-  border: 1px solid #bbb;
-  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+input {
+    padding: 0%;
+    margin: 0%;
+    width: 290px;
+    height: 120px;
+    margin: 3px;
+    text-align: right;
+    font-size: 50px;
+    background-color: #22252D;
+    color: white;
+    border: none;
+    outline: none;
+    pointer-events: none;
 }
 
-.buttons {}
 
-.operators {}
-
-.operators div {
-  display: inline-block;
-  border: 1px solid #bbb;
-  border-radius: 1px;
-  width: 80px;
-  text-align: center;
-  padding: 10px;
-  margin: 20px 4px 10px 0;
-  cursor: pointer;
-  background-color: #ddd;
-  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+button {
+    background-color: #171515;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    width: 60px;
+    height: 60px;
+    margin: 3px;
+    margin-top: 10px;
+    font-size: larger;
 }
 
-.operators div:hover {
-  background-color: #ddd;
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  border-color: #aaa;
+button:hover {
+    background-color: #037bd6;
+    color: #171515;
+    transition: 0.1s ease;
 }
 
-.operators div:active {
-  font-weight: bold;
+#btnx {
+    color: #037bd6;
+    background-color: #171515;
+    
 }
 
-.leftPanel {
-  display: inline-block;
+#btnx:hover {
+    color: #171515;
+    background-color: #037bd6;
+    transition: 0.2s ease;
 }
 
-.numbers div {
-  display: inline-block;
-  border: 1px solid #ddd;
-  border-radius: 1px;
-  width: 80px;
-  text-align: center;
-  padding: 10px;
-  margin: 10px 4px 10px 0;
-  cursor: pointer;
-  background-color: #f9f9f9;
-  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+p {
+    padding: 5px;
+    margin-top: 10px;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #171717;
+    color: #037bd6;
+ }
+
+p:hover {
+    color: white;
 }
 
-.numbers div:hover {
-  background-color: #f1f1f1;
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  border-color: #bbb;
+#funcbtn {
+    color: #171515;
+    background-color: #037bd6;
 }
 
-.numbers div:active {
-  font-weight: bold;
-}
-
-div.equal {
-  display: inline-block;
-  border: 1px solid #3079ED;
-  border-radius: 1px;
-  width: 17%;
-  text-align: center;
-  padding: 127px 10px;
-  margin: 10px 6px 10px 0;
-  vertical-align: top;
-  cursor: pointer;
-  color: #FFF;
-  background-color: #4d90fe;
-  transition: all .2s ease-in-out;
-}
-
-div.equal:hover {
-  background-color: #307CF9;
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  border-color: #1857BB;
-}
-
-div.equal:active {
-  font-weight: bold;
+#funcbtn:hover {
+    background-color: #2697ed;
 }
